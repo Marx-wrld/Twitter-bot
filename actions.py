@@ -14,8 +14,8 @@ from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.forms import FormAction
 
 details = {
-    'ashish': '+91 8209829808',
-    'innovate': '+91 9413995563'
+    'marx': '+254 740334255',
+    'imarx_bot': '+254 740334255'
 }
 
 
