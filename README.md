@@ -1,2 +1,2 @@
-# Telegram Chatbot with Rasa customer service
-This is an M.L based python chatbot with Rasa customer service
+# Twitter-bot
+This is a Python based Twitter bot called TheafterMarx built using the twepy library
