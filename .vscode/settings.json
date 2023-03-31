@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "C:/Users/MARX/Desktop/Chatbot/venv/bin/python.exe",
+    "python.envFile": "${Chatbot/.env"
+}
