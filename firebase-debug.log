@@ -1,0 +1,76 @@
+[debug] [2023-06-16T11:14:04.338Z] ----------------------------------------------------------------------
+[debug] [2023-06-16T11:14:04.348Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MARX\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-06-16T11:14:04.349Z] CLI Version:   12.4.0
+[debug] [2023-06-16T11:14:04.350Z] Platform:      win32
+[debug] [2023-06-16T11:14:04.351Z] Node Version:  v18.16.0
+[debug] [2023-06-16T11:14:04.353Z] Time:          Fri Jun 16 2023 14:14:04 GMT+0300 (East Africa Time)
+[debug] [2023-06-16T11:14:04.354Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-16T11:14:04.702Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-16T11:14:04.703Z] > authorizing via signed-in user (imarx5277@gmail.com)
+[debug] [2023-06-16T11:14:04.704Z] [iam] checking project twitter-bot-847b6 for permissions ["firebase.projects.get"]
+[debug] [2023-06-16T11:14:04.706Z] > refreshing access token with scopes: []
+[debug] [2023-06-16T11:14:04.710Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-16T11:14:04.710Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-16T11:14:05.110Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-06-16T11:14:05.111Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-16T11:14:05.208Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-bot-847b6:testIamPermissions [none]
+[debug] [2023-06-16T11:14:05.209Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-bot-847b6:testIamPermissions x-goog-quota-user=projects/twitter-bot-847b6
+[debug] [2023-06-16T11:14:05.209Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-bot-847b6:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-06-16T11:14:06.696Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-bot-847b6:testIamPermissions 200
+[debug] [2023-06-16T11:14:06.696Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-bot-847b6:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-06-16T11:14:06.697Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/twitter-bot-847b6 [none]
+[debug] [2023-06-16T11:14:07.167Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/twitter-bot-847b6 200
+[debug] [2023-06-16T11:14:07.167Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/twitter-bot-847b6 {"projectId":"twitter-bot-847b6","projectNumber":"537910839863","displayName":"twitter-bot","name":"projects/twitter-bot-847b6","resources":{"hostingSite":"twitter-bot-847b6"},"state":"ACTIVE","etag":"1_32115ba6-9157-4d42-aa5a-80b5bfae1194"}
+[info] 
+[info] === Serving from 'C:\Users\MARX\Desktop\Chatbot'...
+[info] 
+[debug] [2023-06-16T11:14:07.177Z] defaultcredentials: writing to file C:\Users\MARX\AppData\Roaming\firebase\imarx5277_gmail_com_application_default_credentials.json
+[debug] [2023-06-16T11:14:07.180Z] Setting GAC to C:\Users\MARX\AppData\Roaming\firebase\imarx5277_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\MARX\\AppData\\Roaming\\firebase\\imarx5277_gmail_com_application_default_credentials.json"}}
+[debug] [2023-06-16T11:14:07.182Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/twitter-bot-847b6/adminSdkConfig [none]
+[debug] [2023-06-16T11:14:07.622Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/twitter-bot-847b6/adminSdkConfig 200
+[debug] [2023-06-16T11:14:07.622Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/twitter-bot-847b6/adminSdkConfig {"projectId":"twitter-bot-847b6","storageBucket":"twitter-bot-847b6.appspot.com"}
+[info] i  functions: Watching "C:\Users\MARX\Desktop\Chatbot\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\MARX\\Desktop\\Chatbot\\functions\" for Cloud Functions..."}}
+[debug] [2023-06-16T11:14:07.747Z] Validating nodejs source
+[debug] [2023-06-16T11:14:12.607Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "openai": "^3.3.0",
+    "twitter-api-v2": "^1.15.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-16T11:14:12.607Z] Building nodejs source
+[debug] [2023-06-16T11:14:12.608Z] Failed to find version of module node: reached end of search path C:\Users\MARX\Desktop\Chatbot\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-06-16T11:14:12.614Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-16T11:14:12.651Z] Found firebase-functions binary at 'C:\Users\MARX\Desktop\Chatbot\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-16T11:14:13.369Z] Serving at port 8054
+
+[debug] [2023-06-16T11:14:14.667Z] Got response from /__/functions.yaml {"endpoints":{"auth":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"auth"},"callback":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"callback"},"tweet":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"tweet"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-16T11:14:14.684Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: auth, callback, tweet. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: auth, callback, tweet."}}
+[info] +  functions[us-central1-auth]: http function initialized (http://localhost:5000/twitter-bot-847b6/us-central1/auth). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5000/twitter-bot-847b6/us-central1/auth)."}}
+[info] +  functions[us-central1-callback]: http function initialized (http://localhost:5000/twitter-bot-847b6/us-central1/callback). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5000/twitter-bot-847b6/us-central1/callback)."}}
+[info] +  functions[us-central1-tweet]: http function initialized (http://localhost:5000/twitter-bot-847b6/us-central1/tweet). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5000/twitter-bot-847b6/us-central1/tweet)."}}
