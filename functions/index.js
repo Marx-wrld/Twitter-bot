@@ -3,7 +3,7 @@ const admin = require("firebase-admin");
 admin.initializeApp();
 
 // Database reference
-const dbRef = admin.firestore().doc("tokens/demo");
+const dbRef = admin.firestore().doc("tokens/XpOgZ67iVHFpTKSJAJoz");
 
 // Twitter API init
 const TwitterApi = require("twitter-api-v2").default;
@@ -12,7 +12,7 @@ const twitterClient = new TwitterApi({
   clientSecret: "YOUR_CLIENT_SECRET",
 });
 
-const callbackURL = "";
+const callbackURL = "http://127.0.0.1:5000/twitter-bot-847b6/us-central1/callback";
 
 // OpenAI API init
 const {Configuration, OpenAIApi} = require("openai");
