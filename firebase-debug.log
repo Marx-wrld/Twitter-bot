@@ -175,3 +175,93 @@
 [error] !!  functions: Failed to load function definition from source: FetchError: request to http://localhost:8819/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8819 {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FetchError: request to http://localhost:8819/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8819"}}
 [debug] [2023-06-16T12:14:51.663Z] Serving at port 8819
 
+[debug] [2023-06-18T20:46:39.806Z] ----------------------------------------------------------------------
+[debug] [2023-06-18T20:46:39.809Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MARX\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-06-18T20:46:39.810Z] CLI Version:   12.4.0
+[debug] [2023-06-18T20:46:39.810Z] Platform:      win32
+[debug] [2023-06-18T20:46:39.811Z] Node Version:  v18.16.0
+[debug] [2023-06-18T20:46:39.898Z] Time:          Sun Jun 18 2023 23:46:39 GMT+0300 (East Africa Time)
+[debug] [2023-06-18T20:46:39.899Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-18T20:46:39.935Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-06-18T20:46:40.657Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-18T20:46:40.661Z] > authorizing via signed-in user (imarx5277@gmail.com)
+[debug] [2023-06-18T20:46:40.663Z] [iam] checking project twitter-bot-847b6 for permissions ["firebase.projects.get"]
+[debug] [2023-06-18T20:46:40.673Z] > refreshing access token with scopes: []
+[debug] [2023-06-18T20:46:40.681Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-18T20:46:40.681Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-18T20:46:41.680Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-06-18T20:46:41.681Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-06-18T20:46:42.138Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-06-18T20:46:42.139Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-18T20:46:42.521Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-bot-847b6:testIamPermissions [none]
+[debug] [2023-06-18T20:46:42.521Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-bot-847b6:testIamPermissions x-goog-quota-user=projects/twitter-bot-847b6
+[debug] [2023-06-18T20:46:42.521Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-bot-847b6:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-06-18T20:46:44.266Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-bot-847b6:testIamPermissions 200
+[debug] [2023-06-18T20:46:44.267Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/twitter-bot-847b6:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-06-18T20:46:44.270Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/twitter-bot-847b6 [none]
+[debug] [2023-06-18T20:46:44.848Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/twitter-bot-847b6 200
+[debug] [2023-06-18T20:46:44.849Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/twitter-bot-847b6 {"projectId":"twitter-bot-847b6","projectNumber":"537910839863","displayName":"twitter-bot","name":"projects/twitter-bot-847b6","resources":{"hostingSite":"twitter-bot-847b6"},"state":"ACTIVE","etag":"1_92087be2-022e-4b34-b0c1-49d4200d4527"}
+[info] 
+[info] === Serving from 'C:\Users\MARX\Desktop\Chatbot'...
+[info] 
+[debug] [2023-06-18T20:46:44.899Z] defaultcredentials: writing to file C:\Users\MARX\AppData\Roaming\firebase\imarx5277_gmail_com_application_default_credentials.json
+[debug] [2023-06-18T20:46:44.909Z] Setting GAC to C:\Users\MARX\AppData\Roaming\firebase\imarx5277_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\MARX\\AppData\\Roaming\\firebase\\imarx5277_gmail_com_application_default_credentials.json"}}
+[debug] [2023-06-18T20:46:44.912Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/twitter-bot-847b6/adminSdkConfig [none]
+[debug] [2023-06-18T20:46:45.461Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/twitter-bot-847b6/adminSdkConfig 200
+[debug] [2023-06-18T20:46:45.462Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/twitter-bot-847b6/adminSdkConfig {"projectId":"twitter-bot-847b6","storageBucket":"twitter-bot-847b6.appspot.com"}
+[info] i  functions: Watching "C:\Users\MARX\Desktop\Chatbot\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\MARX\\Desktop\\Chatbot\\functions\" for Cloud Functions..."}}
+[debug] [2023-06-18T20:46:45.598Z] Validating nodejs source
+[debug] [2023-06-18T20:46:55.783Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\Windows\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\MARX\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\MARX\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:55:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\MARX\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:76:32)
+    at Delegate.validate (C:\Users\MARX\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\MARX\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:297:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\MARX\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:326:34)
+    at async FunctionsEmulator.connect (C:\Users\MARX\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:263:13)
+    at async FunctionsServer.connect (C:\Users\MARX\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\functions.js:55:9)
+[debug] [2023-06-18T20:46:55.784Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "openai": "^3.3.0",
+    "twitter-api-v2": "^1.15.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-18T20:46:55.785Z] Building nodejs source
+[debug] [2023-06-18T20:46:55.786Z] Failed to find version of module node: reached end of search path C:\Users\MARX\Desktop\Chatbot\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-06-18T20:46:55.798Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-18T20:46:55.868Z] Found firebase-functions binary at 'C:\Users\MARX\Desktop\Chatbot\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-18T20:46:58.520Z] Serving at port 8487
+
+[debug] [2023-06-18T20:47:05.068Z] Got response from /__/functions.yaml {"endpoints":{"auth":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"auth"},"callback":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"callback"},"tweet":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"tweet"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-18T20:47:05.084Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: auth, callback, tweet. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: auth, callback, tweet."}}
+[info] +  functions[us-central1-auth]: http function initialized (http://localhost:5000/twitter-bot-847b6/us-central1/auth). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5000/twitter-bot-847b6/us-central1/auth)."}}
+[info] +  functions[us-central1-callback]: http function initialized (http://localhost:5000/twitter-bot-847b6/us-central1/callback). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5000/twitter-bot-847b6/us-central1/callback)."}}
+[info] +  functions[us-central1-tweet]: http function initialized (http://localhost:5000/twitter-bot-847b6/us-central1/tweet). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5000/twitter-bot-847b6/us-central1/tweet)."}}
